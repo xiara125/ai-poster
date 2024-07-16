@@ -14,8 +14,6 @@ keyword = st.text_input("키워드를 입력하세요.")
 # 코드스니펫 - 버튼
 if st.button('생성 :fire:'):
     with st.spinner('생성 중입니다.'):
-        time.sleep(3)
-        st.write('hello')
         chat_completion = client.chat.completions.create(
             messages=[{
                 "role": "user",
